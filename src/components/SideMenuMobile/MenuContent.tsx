@@ -23,7 +23,7 @@ const mainListItems = [
 
 export default function MenuContent() {
   return (
-    <Stack sx={{ flexGrow: 1, p: 1, justifyContent: 'space-between' }} spacing={1}>
+    <Stack sx={{ flexGrow: 1, p: 1, gap: 1 }} spacing={1}>
       {mainListItems.map((item, index) => (
         <ListItem key={index} disablePadding sx={{ display: 'block' }}>
           <ListItemButton selected={index === 0}>

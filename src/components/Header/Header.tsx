@@ -1,5 +1,4 @@
 import Stack from '@mui/material/Stack';
-
 import NavbarBreadcrumbs from './NavbarBreadcrumbs';
 import ColorModeIconDropdown from '../../themes/ColorModeIconDropdown';
 import Search from './Search';
