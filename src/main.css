@@ -1,0 +1,17 @@
+body {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 400;
+    /* Default to regular */
+}
+
+.poppins-bold {
+    font-weight: 700;
+}
+
+.poppins-light {
+    font-weight: 300;
+}
+
+.poppins-extrabold {
+    font-weight: 800;
+}
