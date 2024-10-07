@@ -5,10 +5,9 @@ import Drawer, { drawerClasses } from '@mui/material/Drawer';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
-import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded';
-import MenuButton from './MenuButton';
 import MenuContent from './MenuContent';
 import CardAlert from './CardAlert';
+import ColorModeIconDropdown from '../../themes/ColorModeIconDropdown';
 
 interface SideMenuMobileProps {
   open: boolean | undefined;
@@ -34,7 +33,7 @@ export default function SideMenuMobile({ open, toggleDrawer }: SideMenuMobilePro
           height: '100%',
         }}
       >
-        <Stack direction="row" sx={{ p: 2, pb: 0, gap: 1 }}>
+        <Stack alignItems='center' direction="row" sx={{ p: 2, pb: 0, gap: 1 }}>
           <Stack
             direction="row"
             sx={{ gap: 1, alignItems: 'center', flexGrow: 1, p: 1 }}
@@ -49,12 +48,11 @@ export default function SideMenuMobile({ open, toggleDrawer }: SideMenuMobilePro
               Murali Samui
             </Typography>
           </Stack>
-          <MenuButton showBadge>
-            <NotificationsRoundedIcon />
-          </MenuButton>
+          <ColorModeIconDropdown />
         </Stack>
         <Divider />
         <Stack sx={{ flexGrow: 1 }}>
+          {/* <ColorModeIconDropdown /> */}
           <MenuContent />
           <Divider />
         </Stack>
