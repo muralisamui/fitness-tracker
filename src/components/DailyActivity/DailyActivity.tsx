@@ -1,4 +1,3 @@
-import Grid from '@mui/material/Grid2';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Stack from '@mui/material/Stack';
@@ -21,7 +20,7 @@ const DailyActivity: React.FC<ActivityDataProps> = ({ data }) => {
                 </Typography>
 
                 {
-                    data.map((activity, index) => (
+                    data.map((activity) => (
 
                         <DailyActivityValues
                             label={activity.label}

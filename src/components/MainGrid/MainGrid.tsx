@@ -156,7 +156,7 @@ export default function MainGrid() {
         columns={12}
         sx={{ mb: (theme) => theme.spacing(2) }}
       >
-        <Grid size={{ xs: 12, sm: 6, lg: 12 }}>
+        <Grid size={{ xs: 12, sm: 12, lg: 12 }}>
           <WeightCard {...weightData} />
         </Grid>
       </Grid>
